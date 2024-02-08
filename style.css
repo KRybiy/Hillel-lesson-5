@@ -51,7 +51,7 @@ p.purple a.big:hover {
 }
 
 div article:not(:first-child) {
-  background-color: fuchsia;
+  background-color:coral;
 }
 
 p.black-white b em {

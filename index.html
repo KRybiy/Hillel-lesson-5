@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Селектори CSS, специфічність селекторів</title>
+</head>
+
+<body>
+  <div>
+    <p>Застосовується до тегів p, вкладених у div, на першому рівні, вага 2*</p>
+  </div>
+
+  <button type="button">Застосовується до тегів button (вага 1)</button>
+
+  <p class="red">Застосовується для тегів з класом "red" (вага 10)</p>
+
+  <p id="orange">Застосовується до тегів з ідентифікатором "orange" (вага 100)</p>
+
+  <a href="http://example.com">Застосовується до тегів з атрибутом "href" які містять в собі слово "example" (вага
+    11)</a>
+
+  <p><b>Застосовується до всіх тегів b вкладених у тег p (вага 2) </b></p>
+
+  <div class="container">
+    <p>Застосовується до другого елементу в списку під класом menu, який знаходиться в контейнері з класом .container
+      (вага 32) </p>
+    <ul class="menu">
+      <li>Елемент 1</li>
+      <li>Елемент 2</li>
+      <li>Елемент 3</li>
+      <li>Елемент 4</li>
+    </ul>
+  </div>
+
+  <p class="light-green greenyellow" id="green1">Застосовується !important (вага стиля властивості 10000)</p>
+
+  <div class="red-background">
+    <div class="blue-text">
+      <span>Застосовується до всіх тегів span які знаходяться в div з класом blue-text, які знаходяться в div з класом
+        red-background (вага 23)</span>
+    </div>
+  </div>
+
+  <p class="purple">
+    <a href="#" class="big">Застосовується до всіх тегів a з класом big, які знаходяться в тезі p з класом purple, але
+      тільки при наведенні (вага 32) </a>
+  </p>
+
+</body>
+
+</html>

@@ -1,0 +1,51 @@
+
+div > p {
+  background-color: yellow;
+}
+
+button {
+  color:aquamarine; 
+}
+
+.red {
+  background-color: red;
+}
+
+#orange {
+  background-color: orange;
+}
+
+a[href*="example"] {
+  background-color: silver;
+}
+
+p b {
+  background-color: blueviolet;
+}
+
+.container > .menu li:first-child + li {
+  background-color: turquoise;
+}
+
+.greenyellow {
+  background-color: greenyellow !important;
+}
+
+.light-green {
+  background-color: lightgreen;
+}
+
+#green, #green1 {
+  background-color: green;
+}
+
+div.red-background div.blue-text span {
+  font-size: 34px;
+  background-color: red;
+  color: blue;
+}
+
+p.purple a.big:hover {
+  background-color: purple;
+  font-size: 50px;
+}

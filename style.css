@@ -53,3 +53,8 @@ p.purple a.big:hover {
 div article:not(:first-child) {
   background-color: fuchsia;
 }
+
+p.black-white b em {
+  background-color: black;
+  color: white;
+}
